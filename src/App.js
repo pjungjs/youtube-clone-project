@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from "./components/common/NavBar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
-import ShowVideo from "./components/pages/ShowVideo";
+import ShowVideo from "./components/videos/ShowVideo";
 
 function App() {
   return (

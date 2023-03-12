@@ -1,4 +1,5 @@
 import { useState } from "react";
+import VideosList from "../videos/VideosList";
 
 export default function Home() {
   const [title, setTitle] = useState("");
@@ -27,7 +28,7 @@ export default function Home() {
       {
         !searchToggle
         ? <p className="noSearch">No Search Result Yet! Please submit a search above!</p>
-        : "here goes the VideosList component"
+        : <VideosList title={title} />
       }
     </>
   );

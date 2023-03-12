@@ -4,13 +4,13 @@ export default function NavBar() {
   return (
     <header>
       <p>
-        <Link to="/"><strong>Youtube</strong></Link>
+        <strong>Youtube</strong>
       </p>
       <p>
         <Link to="/">Home</Link>
       </p>
       <p>
-        <Link to="/">About</Link>
+        <Link to="/about">About</Link>
       </p>
     </header>
   );

@@ -10,4 +10,4 @@ Team: [Diego Carrero](https://github.com/DiegoCarrero) , [Jinseok Jung](https://
 
 [Trello](https://trello.com/b/V7bVv0gd/youtube-project)
 
-[Figman](https://www.figma.com/file/orGbHrmiSQp4fZj4T3Xttd/Untitled?node-id=0%3A1&t=fWA9ysko50f9AqDR-1)
+[Figma](https://www.figma.com/file/orGbHrmiSQp4fZj4T3Xttd/Untitled?node-id=0%3A1&t=fWA9ysko50f9AqDR-1)

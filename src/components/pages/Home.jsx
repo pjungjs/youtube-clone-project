@@ -3,25 +3,27 @@ import VideosList from "../videos/VideosList";
 
 export default function Home() {
   const [title, setTitle] = useState("");
+  const [searchValue, setSearchValue] = useState("");
   const [searchToggle, setSearchToggle] = useState(false);
 
   function updateSearch(event) {
-    const searchResult = event.target.value;
-    if (!searchResult) {
+    const inputValue = event.target.value;
+    if (!inputValue) {
       setSearchToggle(false);
     }
-    setTitle(searchResult);
+    setSearchValue(inputValue);
   }
  
   function handleSearch(event) {
     event.preventDefault();
     setSearchToggle(true);
+    setTitle(searchValue);
   }
 
   return (
     <>
       <form onSubmit={handleSearch}>
-        <input type="text" id="search" placeholder="Search..." value={title} onChange={updateSearch} />
+        <input type="text" id="search" placeholder="Search..." value={searchValue} onChange={updateSearch} />
         <button  type="submit">Search</button>
       </form>
 

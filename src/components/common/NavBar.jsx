@@ -4,7 +4,7 @@ export default function NavBar() {
   return (
     <header>
       <p>
-        <strong>Youtube</strong>
+        <span>Youtube</span>
       </p>
       <p>
         <Link to="/">Home</Link>

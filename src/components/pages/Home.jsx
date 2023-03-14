@@ -21,17 +21,19 @@ export default function Home() {
   }
 
   return (
-    <>
+    <main>
       <form onSubmit={handleSearch}>
         <input type="text" id="search" placeholder="Search..." value={searchValue} onChange={updateSearch} />
         <button  type="submit">Search</button>
       </form>
 
-      {
-        !searchToggle
-        ? <p className="noSearch">No Search Result Yet! Please submit a search above!</p>
-        : <VideosList title={title} />
-      }
-    </>
+      <div className="container">
+        {
+          !searchToggle
+          ? <p className="noSearch">No Search Result Yet! Please submit a search above!</p>
+          : <VideosList title={title} />
+        }
+      </div>
+    </main>
   );
 }

@@ -22,7 +22,7 @@ export default function VideosList({ title }) {
         const videoThumbnail = video.snippet.thumbnails.medium.url;
 
         return(
-          <div key={`${kind}-${id}`}>
+          <div key={`${kind}-${id}`} className="eachVideo">
             <Link to={`/videos/${id}`}>
               <img src={videoThumbnail} />
             </Link>
@@ -34,8 +34,8 @@ export default function VideosList({ title }) {
   }
 
   return (
-    <>
+    <div className="videosList">
       {showVideos()}
-    </>
+    </div>
   );
 }

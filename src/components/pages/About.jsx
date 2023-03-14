@@ -31,7 +31,11 @@ export default function About() {
             <div className="container">
               <h2>Diego Carrero</h2>
               <p className="title">Co-Creator</p>
-              <p></p>
+              <p>
+                I am a developing Software Engineer with years of experience working as a Spanish Interpreter in the legal and medical fields.
+                I am passionate about turning ideas on paper into actionable projects through programming, and my hobbies include playing pickleball, basketball and weight training. 
+              </p>
+              <p>diegocar2413@gmail.com</p>
             </div>
           </div>
         </div>

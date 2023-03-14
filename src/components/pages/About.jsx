@@ -2,6 +2,7 @@
 export default function About() {
   return (
     <div>
+
       <div className="about-section">
         <h1>About Us</h1>
         <p>We are developing Software Engineers honing our skills with React.js.</p>
@@ -10,12 +11,14 @@ export default function About() {
           This web application will allow you to watch videos based on any input you wish to search by using the YouTube API.
         </p>
       </div>
-      <h2 style='text-align:center'>Our Team</h2>
+
+      <h2>Our Team</h2>
+
       <div className="row">
 
         <div className="column">
           <div className="card">
-            <img src='' alt='Jinseok' style='width:100%'/>
+            <img src='' alt='Jinseok' />
             <div className="container">
               <h2>Jinseok Jung</h2>
               <p className="title">Co-Creator</p>
@@ -27,7 +30,7 @@ export default function About() {
 
         <div className="column">
           <div className="card">
-            <img src="" alt="Diego" style='width:100%'/>
+            <img src="" alt="Diego" />
             <div className="container">
               <h2>Diego Carrero</h2>
               <p className="title">Co-Creator</p>
@@ -41,8 +44,7 @@ export default function About() {
         </div>
 
       </div>
-      
-      
+
     </div>
   );
 }

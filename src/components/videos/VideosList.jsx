@@ -13,12 +13,21 @@ export default function VideosList({ title }) {
       .catch((error) => console.log(error))
   }, [title]);
 
+  function fixTitle(title) {
+    let fixedTitle = title;
+    while (fixedTitle.includes("&quot;") || fixedTitle.includes("&#39;")) {
+        fixedTitle = fixedTitle.replace("&quot;", '"');
+        fixedTitle = fixedTitle.replace("&#39;", "'");
+    }
+    return fixedTitle;
+  }
+
   function showVideos() {
     if(Object.keys(searchResult).length !== 0) {
       return searchResult.items.map(video => {
         const kind = video.id.kind;
         const id = video.id.channelId || video.id.videoId;
-        const videoTitle = video.snippet.title;
+        const videoTitle = fixTitle(video.snippet.title);
         const videoThumbnail = video.snippet.thumbnails.medium.url;
 
         return(

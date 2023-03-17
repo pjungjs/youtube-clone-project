@@ -22,8 +22,10 @@ export default function About() {
             <div className="container">
               <h2>Jinseok Jung</h2>
               <p className="title">Co-Creator</p>
-              <p>Text that describes Jinseok.</p>
-              <p>pjungjs@gmail.com</p>
+              <p>
+                Full-Stack Web Developer in the making. Interested in working on fun and interesting ideas.
+              </p>
+              <p>https://github.com/pjungjs</p>
             </div>
           </div>
         </div>

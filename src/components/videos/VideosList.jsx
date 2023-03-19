@@ -15,7 +15,7 @@ export default function VideosList({ posts }) {
     return(
       <div key={id} className="eachVideo">
         <Link to={`/videos/${id}`}>
-          <img src={videoThumbnail} />
+          <img src={videoThumbnail} alt="video thumbnail" />
         </Link>
         <p>{videoTitle}</p>
       </div>

@@ -11,7 +11,7 @@ export default function VideosIndex({ title }) {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    // setSearchResult(searchBrunoMars)
+    setSearchResult(searchBrunoMars)
     getAllVideos(title, 50)
       .then((response) => {
         setSearchResult(response);

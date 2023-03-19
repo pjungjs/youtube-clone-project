@@ -2,13 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function VideosList({ posts }) {
   function fixTitle(title) {
-    let fixedTitle = title;
-    while (fixedTitle.includes("&quot;") || fixedTitle.includes("&#39;") || fixedTitle.includes("&amp;")) {
-      fixedTitle = fixedTitle.replace("&quot;", '"');
-      fixedTitle = fixedTitle.replace("&#39;", "'");
-      fixedTitle = fixedTitle.replace("&amp;", "&");
-    }
-    return fixedTitle;
+    //used regex to simplify the code
+    const entities = { "&quot;": '"', "&#39;": "'", "&amp;": "&" };
+    return title.replace(/(&quot;|&#39;|&amp;)/g, match => entities[match]);
   }
 
   return posts.map(video => {

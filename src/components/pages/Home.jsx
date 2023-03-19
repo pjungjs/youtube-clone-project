@@ -4,20 +4,15 @@ import VideosIndex from "../videos/VideosIndex";
 export default function Home() {
   const [title, setTitle] = useState("");
   const [searchValue, setSearchValue] = useState("");
-  const [searchToggle, setSearchToggle] = useState(false);
 
   function updateSearch(event) {
-    const inputValue = event.target.value;
-    if (!inputValue) {
-      setSearchToggle(false);
-    }
-    setSearchValue(inputValue);
+    setSearchValue(event.target.value);
   }
  
   function handleSearch(event) {
     event.preventDefault();
-    setSearchToggle(true);
     setTitle(searchValue);
+    setSearchValue("");
   }
 
   return (
@@ -29,7 +24,7 @@ export default function Home() {
 
       <div className="container">
         {
-          !searchToggle
+          !title
           ? <p className="noSearch">No Search Result Yet! Please submit a search above!</p>
           : <VideosIndex title={title} />
         }

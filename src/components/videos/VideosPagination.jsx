@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function VideosPagination({ setPosts, searchResult, totalPosts }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [videosPerPage, setVideosPerPage ] = useState(10);
+  const videosPerPage = 10;
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalPosts / videosPerPage); i++) {

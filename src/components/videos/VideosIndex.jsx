@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getAllVideos } from "../../api/fetch";
 import VideosPagination from "./VideosPagination";
 import VideosList from "./VideosList";
+import ErrorMessage from "../errors/ErrorMessage";
 
 // //pulling from database for testing
 // import searchBrunoMars from "../../data/db";
@@ -12,11 +13,12 @@ export default function VideosIndex({ title }) {
 
   useEffect(() => {
     // setSearchResult(searchBrunoMars)
+    setSearchResult({});
     getAllVideos(title, 50)
       .then((response) => {
         setSearchResult(response);
       })
-      .catch((error) => console.log("Error on mounting: ", error))
+      .catch((error) => <ErrorMessage error={error} />)
   }, [title]);
 
   if (Object.keys(searchResult).length !== 0) {

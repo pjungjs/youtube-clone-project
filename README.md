@@ -1,8 +1,11 @@
 # Youtube Clone Group Project
 
-Pursuit 9.4 Cohort - Module 3
+Pursuit 9.4 Cohort - Module 3 Team Project
 
-Team: [Diego Carrero](https://github.com/DiegoCarrero) , [Jinseok Jung](https://github.com/pjungjs)
+| Team | 
+| ------------- | 
+| [Diego Carrero](https://github.com/DiegoCarrero) | 
+| [Jinseok Jung](https://github.com/pjungjs) | 
 
 ---
 

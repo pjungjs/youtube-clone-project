@@ -5,6 +5,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  box-sizing: border-box;
+}
 
 
 /********** NavBar.jsx **********/
@@ -33,7 +36,6 @@ header span {
 }
 
 
-
 /********** About.jsx **********/
 .about {
   display: grid;
@@ -41,7 +43,49 @@ header span {
   grid-gap: 30px;
 }
 
+.column {
+  float: left;
+  width: 48%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.about-container {
+  padding: 0 16px;
+}
+
+.about-container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center-text {
+  text-align: center;
+}
 
 /********** Home.jsx **********/
 main {

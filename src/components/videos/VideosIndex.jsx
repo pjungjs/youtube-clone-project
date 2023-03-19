@@ -3,8 +3,8 @@ import { getAllVideos } from "../../api/fetch";
 import VideosPagination from "./VideosPagination";
 import VideosList from "./VideosList";
 
-//pulling from database for testing
-import searchBrunoMars from "../../data/db";
+// //pulling from database for testing
+// import searchBrunoMars from "../../data/db";
 
 export default function VideosIndex({ title }) {
   const [searchResult, setSearchResult] = useState({});

@@ -2,6 +2,8 @@
 
 Pursuit 9.4 Cohort - Module 3 Team Project
 
+Deployed on Netlify: [Youtube Clone](https://dj-youtube-clone.netlify.app/)
+
 | Team | 
 | ------------- | 
 | [Diego Carrero](https://github.com/DiegoCarrero) | 

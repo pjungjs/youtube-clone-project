@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { getAllVideos } from "../../api/fetch";
 import VideosPagination from "./VideosPagination";
 import VideosList from "./VideosList";
-import ErrorMessage from "../errors/ErrorMessage";
-import { useNavigate } from "react-router-dom";
 
 // //pulling from database for testing
 // import searchBrunoMars from "../../data/db";

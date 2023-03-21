@@ -18,22 +18,24 @@ export default function About() {
 
         <div className="column">
           <div className="card">
-            <img src='https://ca.slack-edge.com/TCVA3PF24-U041NJ82RM0-22a6eba57651-512' alt='Jinseok' className="img" />
+            <a href="https://github.com/pjungjs" target="_blank" rel="noopener noreferrer">
+              <img src='https://ca.slack-edge.com/TCVA3PF24-U041NJ82RM0-22a6eba57651-512' alt='Jinseok' className="img" />
+            </a>
             <div className="about-container">
               <h2>Jinseok Jung</h2>
               <p className="title">Co-Creator</p>
               <p>
                 Full-Stack Web Developer in the making. Interested in working on fun and interesting ideas.
               </p>
-              <p>https://github.com/pjungjs</p>
-              <p></p>
             </div>
           </div>
         </div>
 
         <div className="column">
           <div className="card">
-            <img src="https://ca.slack-edge.com/TCVA3PF24-U0418081MQX-ea8c36aacfb8-512" alt="Diego" className="img" />
+            <a href="https://github.com/DiegoCarrero" target="_blank" rel="noopener noreferrer">
+              <img src="https://ca.slack-edge.com/TCVA3PF24-U0418081MQX-ea8c36aacfb8-512" alt="Diego" className="img" />
+            </a>
             <div className="about-container">
               <h2>Diego Carrero</h2>
               <p className="title">Co-Creator</p>
@@ -41,14 +43,13 @@ export default function About() {
                 Developing Software Engineer with years of experience working as a Spanish Interpreter in the legal and medical fields.
                 Passionate about turning ideas on paper into actionable projects through programming. 
               </p>
-              <p>https://github.com/DiegoCarrero</p>
-              <p>diegocar2413@gmail.com</p>
             </div>
           </div>
         </div>
-
       </div>
-
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }

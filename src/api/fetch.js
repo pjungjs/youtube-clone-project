@@ -3,7 +3,7 @@ const URL = process.env.REACT_APP_BASE_URL;
 const KEY = process.env.REACT_APP_API_KEY;
 
 export async function getAllVideos(searchTitle, maxItems) {
-  const nextPageToken = "&pageToken=" //add token
+  // const nextPageToken = "&pageToken=" //add token
 
   try {
     const response = await fetch(`${URL}&type=video&q=${searchTitle}&maxResults=${maxItems}&key=${KEY}`);

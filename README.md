@@ -2,7 +2,7 @@
 
 Pursuit 9.4 Cohort - Module 3 Team Project
 
-Deployed on Netlify: [Youtube Clone](https://dj-youtube-clone.netlify.app/)
+Deployed on Netlify: [Youtube Clone](https://diego-jinseok-youtube-clone.netlify.app/)
 
 | Team | 
 | ------------- | 
